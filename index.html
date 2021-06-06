@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="welcom to website Designer Abdessamie">
+  <meta name="keywords" content="html5, css3, animations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cars.com</title>
+
+  <link rel="stylesheet" href="css/Cars-site.css" type="text/css" />
+  <link rel="stylesheet" href="css/formlogin.css" type="text/css" />
+  <link rel="stylesheet" href="css/responsivecars.css" type="text/css" />
+
+  <script type="text/javascript" src="js/data.js"></script>
+
+  <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+
+</head>
+
+<body>
+
+
+
+  <!---*****************************************************--->
+  <!----------------------- start Sign In form------------------->
+
+  <div id="signIn" class="login-container signin-container">
+
+    <img onclick="closForms()" class="close" src="icons/close.svg">
+
+    <form id="signinFORM">
+
+      <div id="container-test" class="social-container">
+        <h6>Sign in</h6>
+        <div class="clear"> </div>
+        <p>with your Social network</p>
+
+        <div class="clear">
+          <a> <button class="google">G</button> </a>
+          <a> <button class="twitter">t</button> </a>
+          <a> <button class="fb">f</button> </a>
+        </div>
+
+      </div>
+
+      <div class="clear"> </div>
+
+      <fieldset>
+        <legend>or</legend>
+      </fieldset>
+
+      <img class="user-icon" src="icons/user.png" title="sign in">
+      <input id="username" type="text" name="text" placeholder="Username Or Email">
+      <img class="lock-icon" src="icons/locked.png" title="password">
+      <input id="pssd" type="password" name="password" placeholder="Password">
+      <span class="btnshow" id="btnshow">show</span>
+
+      <input type="checkbox" id="Remember" name="Remember" value="Remember">
+      <label for="Remember">Remember me</label>
+
+      <button onclick="changInputType()" class="submit-button-of-all-login-pages" type="submit" name="submit">Sign In
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <!-----------------------End Sign In form------------------->
+  <!---*****************************************************--->
+
+
+
+  <!---*****************************************************--->
+  <!----------------------- start Sign Up form------------------->
+
+
+  <div id="signUp" class="login-container signup-container">
+
+    <img onclick="closForms()" class="close" src="icons/close.svg">
+
+    <form>
+
+      <div id="container-test" class="social-container">
+        <h6>Sign Up</h6>
+        <div class="clear"> </div>
+        <p>with your Social network</p>
+
+        <div class="clear">
+          <a> <button class="google">G</button> </a>
+          <a> <button class="twitter">t</button> </a>
+          <a> <button class="fb">f</button> </a>
+        </div>
+
+      </div>
+
+      <div class="clear"> </div>
+
+      <fieldset>
+        <legend>or</legend>
+      </fieldset>
+
+      <img class="user-icon" src="icons/user.png" title="sign Up">
+      <input id="usernameUp" type="text" name="text" placeholder="Username">
+      <img class="user-icon" src="icons/envelope.png" title="sign Up">
+      <input id="emailUP" type="text" name="text" placeholder="Email">
+      <img class="lock-icon" src="icons/locked.png" title="password">
+      <input id="pssd2" type="password" name="password" placeholder="Password">
+      <span class="btnshow2" id="btnshow2">show</span>
+
+      <button onclick="changInputType()" class="submit-button-of-all-login-pages creat-account" type="submit"
+        name="submit">Sign Up
+        <svg width="13px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <!-----------------------End Sign Up form------------------->
+  <!---*****************************************************--->
+
+
+  <div class="hidden-All" id="hidden-All">
+
+    <header id="header">
+
+      <nav id="#top">
+
+        <!--<img onclick="vuFunc()" class="menu-button" src="icons/menu-button2.svg">-->
+
+        <div id="menu-button" onclick="vuFunc()" class="menu-button">
+          <div class="button-parts"></div>
+          <div class="button-parts"></div>
+          <div class="button-parts"></div>
+        </div>
+
+        <div id="menu-container" class="container-menu">
+
+          <ul class="ul-two">
+
+            <li> <a href="#">Shop</a> </li>
+            <li> <a href="#"> Sell </a> </li>
+            <li> <a href="#"> Service </a> </li>
+            <li> <a href="#">Why Cars </a></li>
+            <li> <a href="#">Help Center </a> </li>
+            <li> <a href="#">FAQ </a> </li>
+            <li> <a href="#">Research Articles </a> </li>
+
+          </ul>
+
+        </div>
+
+        <h1 class="logo">Cars</h1>
+
+        <ul class="ul-one" onmouseover="dltLoginStorageEvent()">
+          <li> <a>Shop</a> </li>
+          <li> <a> Sell </a> </li>
+          <li> <a> Service </a> </li>
+
+          <li class="MoreLinks"> <a> More </a> <img class="next2" src="icons/next.png">
+
+            <section id="SectionLinks">
+              <ul>
+                <li> <a>Why Cars </a></li>
+                <li> <a>Help Center </a> </li>
+                <li> <a>FAQ </a> </li>
+                <li> <a>Research Articles </a> </li>
+              </ul>
+            </section>
+
+          </li>
+
+        </ul>
+
+        <ul class="ul-Three">
+
+          <li onmouseover="visibleFindStore()"> <img class="search-icon" src="icons/pin.png">
+            <p class="paragraph-find-store">Find your store</p>
+
+            <img class="next" src="icons/next.png">
+
+          </li>
+
+          <div id="findstore" class="seaction-for-find-store">
+
+            <form>
+              <input id="focusInput" class="find-store" type="text" name="search" placeholder="Find your store Here">
+              <button class="find-store-search-button" type="submit" name="submit"> <img src="icons/search-icon.png"
+                  alt="search icon"> </button>
+            </form>
+
+          </div>
+
+          <li onmouseover="dltLoginStorageEvent()">
+
+            <img class="login-icon" src="icons/user.png" title="login">
+
+            <ul class="login">
+
+              <li> <img class="user-icon-one" src="icons/user.png" title="sign in"> <a id="button-form"
+                  onclick="signIn()"> Sign In </a>
+              </li>
+
+              <li> <img class="signUpIcon" src="icons/user (1).png" title="sign in"> <a id="button-form"
+                  onclick="signUp()"> Sign Up </a> </li>
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+
+    <main onclick="dltLoginStorageEvent()">
+
+      <div id="background" class="background">
+
+        <figure>
+
+          <h2>Shop 50,000 used cars, all CarMax Certified</h2>
+
+          <div class="clear-both"></div>
+
+          <input id="SearchByName" oninput="eventOFsearch()" class="search-two" type="text>" name="search"
+            placeholder="Search By Name">
+
+          <button id="search2" onclick="eventOFsearch()" class="search"> <img src="icons/search-icon.png"
+              alt="search icon"> </button>
+
+          <div class="clear-both"></div>
+
+          <button type="button" name="resent"> Recent
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+
+        </figure>
+
+      </div>
+
+
+      <!--***************----back to up button---******************-->
+
+      <div id="backUP" class="backtop-container">
+
+        <a href="#top" class="cta cta-two">
+
+          <span>Top</span>
+
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+
+      </div>
+
+      <!--********************-------back to up button-----*******************-->
+
+      <ul class="scrollinTrns" id="scrollinTrns">
+        <li><a href="#SHOPBYTYPE">SHOP BY TYPE</a></li>
+        <li><a href="#SHOPBYMAKE">SEARCH BY MAKE</a></li>
+        <li><a href="#CARS">CARS GALERY</a></li>
+      </ul>
+
+      <!--******---- start rwo-----********-->
+      <div id="SHOPBYTYPE"></div>
+
+      <div class="cars-type-container">
+
+        <h4>SHOP BY TYPE</h4>
+
+        <div class="rwo">
+
+          <h5> SUVs </h5>
+
+          <img title="iconSuv" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+          <h5>TRUCKS</h5>
+
+          <img title="icon trucks" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>CROSSOVERS</h5>
+          <img title="CROSSOVERS" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>SEDANS</h5>
+
+          <img title="SEDANS" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>COUPES</h5>
+
+          <img title="COUPES" src="icons/suv.png">
+        </div>
+
+        <!--**********-------next button----*************-->
+
+        <div class="cta-container">
+
+          <a class="cta">
+
+            <span>ALL</span>
+
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+
+        </div>
+
+        <!--**************---next button--------*****-->
+
+
+      </div>
+
+      <!--**************-------end rwo----************-->
+
+      <!---*****-----start make container-----*********---->
+
+      <div class="make-container" id="SHOPBYMAKE">
+
+        <h4>SEARCH BY MAKE</h4>
+
+        <div class="rwo">
+
+          <h5>GOLF</h5>
+
+          <img title="GOLF" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>CANGOO</h5>
+
+          <img title="CANGOO" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>AUDI</h5>
+          <img title="AUDI" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>TOYOTA</h5>
+
+          <img title="TOYOTA" src="icons/suv.png">
+
+        </div>
+
+        <div class="rwo">
+
+          <h5>FIAT</h5>
+
+          <img title="fiat" src="icons/suv.png">
+        </div>
+
+        <!--***********--------next button-------************-->
+
+        <div class="cta-container">
+
+          <a class="cta">
+
+            <span>ALL</span>
+
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+
+        </div>
+
+        <!----******---next button---***********----->
+
+      </div>
+
+      <!---*-*-*-*-end marck container*-*-*-*----->
+
+
+      <!---******-----start newcars container------******---->
+
+      <span id="CARS"></span>
+
+      <div class="newcars-container">
+
+        <h4>CARS GALERY</h4>
+
+        <!-------- Start container of CARS GALERY-------->
+        <div id="newcarsContainer" class="container-newcars-img"> </div>
+        <!--------End container of CARS GALERY-------->
+
+        <!--***********-- start Learn more button --**********-->
+
+        <div class="cta-container">
+
+          <a class="cta" onclick=" addClasses()">
+
+            <span>ALL</span>
+
+            <svg width="13px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+
+        </div>
+
+        <!--end learn more button-->
+
+      </div>
+
+      <!--****--end newcars container--****-->
+
+    </main>
+
+    <footer onmouseover="dltLoginStorageEvent()">
+
+      <div class="the-container-of-footer-childs">
+
+        <div class="contact">
+          <h5>
+            CONTACT
+          </h5>
+
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="email" placeholder="email">
+            <input type="text" name="number phone" placeholder="number phone">
+            <textarea placeholder="Message"></textarea>
+            <button class="send">Submit</button>
+          </form>
+        </div>
+
+        <div class="share-container">
+          <h5>
+            SOCIAL MEDIA
+          </h5>
+          <div class="socials-links">
+            <a href="http://www.instagram.com"> <span>&nbsp;in&nbsp;</span> &nbsp; @cars_hu </a>
+            <a href="http://wwww.facebook.com"> <span>&nbsp; f &nbsp;</span> &nbsp; cars hu </a>
+            <a href="http://www.twitter.com"> <span>&nbsp; t &nbsp;</span> &nbsp; cars hu </a>
+          </div>
+        </div>
+          <div class="clear-both"></div>
+          <hr>
+          <div class="clear-both"></div>
+          <p> &copy; 2019-2020 CARS, All copyRight Register</p>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <!-------- Start Learn more container of CARS GALERY-------->
+  <!---*****************************************************--->
+
+  <div id="LearnMoreGalery" class="grandContainer">
+
+    <span id="closeMore" class="span1"><img class="close-more" onclick="closeTheMore()" src="icons/close.png"></span>
+
+    <div class="learn-more-galery" id="twoCNTR">
+
+      <div class="details" id="details">
+        <div id="detailsIMG"> </div>
+        <div class="desc">
+          <span id="description"></span>
+          <br>
+          <span id="price"></span>
+          <button>SHOP</button>
+        </div>
+      </div>
+
+      <div id="CNTRGalery" class="CNTRGalery"> </div>
+
+    </div>
+  </div>
+
+  <!---*****************************************************--->
+  <!--------End Learn more container of CARS GALERY-------->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="js/cars.js"> </script>
+
+</body>
+
+
+</html>

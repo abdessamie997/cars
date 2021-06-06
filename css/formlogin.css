@@ -1,0 +1,273 @@
+
+*, html, body { padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif ; border: none; outline: none;}
+
+
+button, a {
+    cursor: pointer;
+}
+
+.close {
+    width: 27px;
+    height: 27px;
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+
+.login-container {
+    width: 450px;
+    height: 525px; 
+    background-color: #fff;
+    box-shadow: rgb(61, 61, 61) 2px 2px 4px,
+    rgb(61, 61, 61) -2px -2px 4px;
+    margin: auto;   
+    cursor: auto;
+    z-index: 30;
+    position: fixed;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    top: -200px;
+    left: 50%;
+    display: none;
+}
+
+
+.signup-container {
+
+    height: 545px;
+    top: -210px;
+}
+
+
+.login-container form {
+    margin: auto;
+    width: 330px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.social-container {
+    margin-left: 17px;
+    margin: auto;
+}
+
+.social-container h6 {
+    
+    color: #114977;
+    margin-top: 25px;
+    font-size: 35px;
+    float: left;
+}
+
+
+.social-container .clear button {
+
+     width: 100px;
+     height: 38px;
+     cursor: pointer;
+     background-color: #b9394a;
+     color: #fff;
+     font-size: 25px;
+     font-weight: bold;
+     margin-top: 20px;
+}
+
+.social-container .clear .twitter {
+    margin-left: 10px;
+    background-color: #447ba8;
+}
+
+.social-container .clear .fb {
+    float: right;
+    background-color: #13578f;
+}
+
+.clear {
+    clear: both;
+    width: auto;
+    margin-top: 17px;
+    
+}
+
+
+.social-container p {
+
+    margin: 15px 0 0 0px;
+    font-size: 17px;
+    display: block;
+    float: left;
+    color: #083d68;
+}
+
+
+
+fieldset {
+    border-top: 1px solid #3d7aac9c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+fieldset legend {
+
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+    color: #33638a;
+}
+
+
+.user-icon, .lock-icon {
+
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+
+.login-container form input {
+    display: block;
+    margin-top: 25px;
+    background-color: transparent;
+    width: 300px;
+    height: 43px;
+    border-bottom: 2px solid #083D68;
+    font-size: 20px;
+    color: #154c79;
+    padding-left: 28px;
+}
+
+::-webkit-input-placeholder {
+    color: #012441;
+    font-size: 17px;
+    opacity: .6;
+}
+
+
+
+
+.signin-container form input:nth-of-type(2) {
+
+    margin-bottom: 25px;
+}
+
+.signin-container form input:nth-of-type(3) {
+
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    display: none;
+}
+
+
+.btnshow, .btnshow2 {
+
+    position: absolute;
+    cursor: pointer;
+    color: #052a49;
+    transform: translate(290px, -53px);
+    visibility: hidden;
+}
+
+.btnshow2 {
+
+    transform: translate(290px, -27px);
+}
+
+.signin-container form input:nth-of-type(3) + label::before {
+
+    content: "\2714";
+    color: #052a49;
+    border: 2px solid #052a49;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.signin-container form input:nth-of-type(3) + label:active::before {
+
+    transform: scale(0);
+}
+
+.signin-container form input:nth-of-type(3):checked + label::before {
+
+    background-color:#052a49;
+    color: #fff;
+}
+
+
+label {
+    color: #052a49;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+
+.login-container form .submit-button-of-all-login-pages {
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #083d68;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.login-container form .submit-button-of-all-login-pages:hover {
+
+    background-color: #fff;
+    color: #083d68;
+    color: 1px solid #083d68;
+    border: 1.5px solid #083d68;
+}
+
+
+.submit-button-of-all-login-pages svg {
+    position: relative;
+    top: 0;
+    margin-left: 7px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.submit-button-of-all-login-pages:hover svg {
+
+    stroke: #083d68; 
+}
+
+
+.loginForm {
+    display: block;
+}
+
+
+.headertwo, .mainone {
+
+    display: none;
+}
